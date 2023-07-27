@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <input type="checkbox" id="darkModePage">Page dark mode</input>
+        <h1>Input</h1>
+        <div class="btn-group">
+            <button class="blocktype" id="impulse" style="color: #FFAA00;">Impulse</button>
+            <button class="blocktype" id="chain" style="color: #55FF55;">Chain</button>
+            <button class="blocktype" id="repeat" style="color: #5555FF;">Repeat</button>
+        </div><br>
+        <div class="btn-group">
+            <button class="condition" id="conditional">conditional</button>
+            <button class="condition" id="unconditional">unconditional</button>
+        </div><br>
+        <div class="btn-group">
+            <button class="redstone" id="alwaysActive" style="color:#ff5555;">always active</button>
+            <button class="redstone" id="needsRedstone" style="color: #aa0000;">needs redstone</button>
+        </div><br>
+
+        <label for="description">description (what does the command do)</label><br>
+        <textarea name="description" id="description"></textarea><br>
+
+        <label for="command">command</label><br>
+        <textarea name="command" id="command"></textarea><br>
+
+        <button id="displayOutput" style="font-size:15px;border-radius: 15px;">Generate output</button>
+
+        <h1>Output</h1>
+        <textarea class="output" id="output"></textarea>
+        <input type="checkbox" class="checkbox" id="checkbox"></input>
+        <button id="setBefore" style="border-radius: 15px;">save output as part of next output</button>
+        <p>copy this output into discord for the fancy text markdowns to work</p>
+
+        <h1>preview</h1>
+        <input type="checkbox" id="darkModePreview">discord dark mode</input>
+        <div id="previewBox" class="previewBox">
+            <p>Here comes the preview of how this might look in discord</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
