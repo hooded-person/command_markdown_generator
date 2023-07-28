@@ -5,9 +5,9 @@ document.getElementById("darkModePage").checked = true
 let blockStatus ="";
 
 let before = "";
-let Blocktype = "";
-let condition = "";
-let redstone = "";
+let Blocktype = "Impulse";
+let condition = "Unconditional";
+let redstone = "Needs Redstone ";
 let description = "";
 let command = "";
 
@@ -67,7 +67,7 @@ function toChain(){
 
 document.getElementById("repeat").addEventListener("click", toRepeat);
 function toRepeat(){
-    Blocktype = "Repeat ";
+    Blocktype = "Repeating ";
     console.log("blocktype changed to Repeat");
     let blockTypeButtons = document.getElementsByClassName("blocktype")
     for (let i = 0; i< blockTypeButtons.length; i++) {
@@ -161,4 +161,21 @@ function darkModePage() {
             textarea[i].style.border = "4px solid #202225"
         }
     }
+}
+
+function updateIMG() {
+    console.log("updated images")
+    document.querySelector("#impulse img").src = "images/" + condition.replace(" ", "") + "_Impulse_Command_Block.gif"
+    document.querySelector("#chain img").src = "images/" + condition.replace(" ", "") + "_Chain_Command_Block.gif"
+    document.querySelector("#repeat img").src = "images/" + condition.replace(" ", "") + "_Repeating_Command_Block.gif"
+
+    document.querySelector("#conditional img").src = "images/Conditional_" + Blocktype.replace(" ", "") + "_Command_Block.gif"
+    document.querySelector("#unconditional img").src = "images/Unconditional_" + Blocktype.replace(" ", "") + "_Command_Block.gif"
+    console.log("'" + Blocktype.replace(" ", "") + "'")
+    console.log("'" + Blocktype)
+}
+console.log(document.getElementsByTagName("button"))
+let ButtonElements = document.getElementsByTagName("button")
+for (let i = 0; i< ButtonElements.length; i++) {
+    ButtonElements[i].addEventListener("click", updateIMG)
 }
