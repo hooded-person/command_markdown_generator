@@ -32,6 +32,11 @@ textarea {
   border-color: #202225;
   border-radius: 10px;
 }
+img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
 
 
 .btn-group button {
@@ -39,7 +44,7 @@ textarea {
   border: 3px outset darkgray; /* Green border */
   color: gray; /* White text */
   font-weight: bold;
-  padding: 10px 24px; /* Some padding */
+  padding: 10px 24px 10px 20px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
 }
