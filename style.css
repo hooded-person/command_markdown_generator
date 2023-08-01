@@ -10,11 +10,6 @@ body {
   background-color: #2f3136;
   /*text-align: center;*/
 }
-body.zoom {
-  zoom: 3;
-  -moz-transform: scale(3);
-  -moz-transform-origin: 0 0;
-}
 
 .previewBox {
   background-color: #36393f;
