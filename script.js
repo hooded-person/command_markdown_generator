@@ -312,10 +312,10 @@ function isMobile() {
     })(navigator.userAgent||navigator.vendor||window.opera);
     return check;
   };
-if (isMobile() == false) {
-    alert("welcome mobile user")
+if (isMobile() == true) {
     let body = document.getElementById("body")
     body.classList.add("zoom")
+    alert("welcome mobile user")
 } else {
     alert("welcome pc user")
 }
