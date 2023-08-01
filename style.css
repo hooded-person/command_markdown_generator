@@ -9,6 +9,8 @@ body {
   color: white;
   background-color: #2f3136;
   /*text-align: center;*/
+  zoom:125%;
+  -ms-zoom: 125%;
 }
 
 .previewBox {
